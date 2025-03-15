@@ -31,7 +31,7 @@ theme:
         icon: material/weather-night
         name: Dark Mode
   font:
-    text: Noto Sans SC # LXGW WenKai Mono TC 
+    text: JetBrains Mono # Noto Sans SC # LXGW WenKai Mono TC 
     code: Martian Mono # JetBrains Mono
   language: zh
   favicon: assets/images/favicon.png
@@ -171,3 +171,5 @@ extra:
 not_in_nav:
 
 nav:
+  - 工具相关:
+    - tools/mkdocs.md
