@@ -87,7 +87,7 @@ plugins:
   # - blog
   - tags
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [CI, true]
       type: datetime
       timezone: Asia/Shanghai
       locale: zh
@@ -95,7 +95,8 @@ plugins:
       enable_creation_date: true
       exclude:
         - index.md
-      enabled: false
+        - tools/index.md
+      enabled: true
   - git-committers:
       enabled: !ENV [CI, false]
       repository: xjjeffery/notes

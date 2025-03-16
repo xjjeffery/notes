@@ -5,10 +5,10 @@
     - design: 圆角化设计
     - newdoc:
         text: 博客主页
-        href: index.md
+        href: ./index.html
     - newdoc:
         text: tools > 工具相关主页
-        href: tools/index.md
+        href: ./tools/index.html
     - newdoc:
         text: tools > MkDocs 使用
-        href: /tools/mkdocs.md
+        href: ./tools/mkdocs.html

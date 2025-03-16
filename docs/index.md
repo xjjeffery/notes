@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Jeffery's NoteBook
 
 用 MkDocs 搭的一个比较简单粗糙的博客，使用 Github Page 部署在 Github 上，方便自己日常使用。

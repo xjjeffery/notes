@@ -2,6 +2,12 @@
   --base-border-radius: 0.8rem; /* 圆角半径 */
 }
 
+/* 隐藏 navigation 和 toc 保持正文大小不变 */
+.md-content {
+  max-width: 890px;
+  margin: 0 auto;
+}
+
 /* 圆角设计 */
 
 /* Grid Cards */

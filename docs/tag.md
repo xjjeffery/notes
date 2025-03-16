@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  # - toc
+---
+
 # Tags
 
 <div class="grid cards" markdown>
