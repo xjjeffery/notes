@@ -29,27 +29,45 @@
   border-bottom-left-radius: var(--base-border-radius);
 }
 
+/* 日志块 */
+.timeline-card {
+  background-color: #FFFFF0;
+  border-radius: var(--base-border-radius);
+}
+
+.timeline-content:before {
+  background-color: #FFFFF0;
+}
+
 /* 新增日志分类 */
-.changelog-type-newdoc {
-    background-color: #;
+.changelog-type-design {
+    background-color: #FF6347;
 }
 
-.changelog-type-newdoc::before {
-    content: "";
+.changelog-type-design::before {
+    content: "网站设计";
 }
 
 .changelog-type-newdoc {
-    background-color: #;
+    background-color: #FFD700;
 }
 
 .changelog-type-newdoc::before {
     content: "新增文档";
 }
 
-.changelog-type-design {
-    background-color: #;
+.changelog-type-newcode {
+    background-color: #87CEEB;
 }
 
-.changelog-type-design::before {
-    content: "网站设计";
+.changelog-type-newcode::before {
+    content: "新增源码";
+}
+
+.changelog-type-refactor {
+    background-color: #00BFFF;
+}
+
+.changelog-type-refactor::before {
+    content: "重构";
 }

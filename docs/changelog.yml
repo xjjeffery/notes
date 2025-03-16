@@ -1,0 +1,14 @@
+- "2025":
+  - "2025.3.16":
+    - design: 创建博客项目
+    - design: 简单配置和美化
+    - design: 圆角化设计
+    - newdoc:
+        text: 博客主页
+        href: index.md
+    - newdoc:
+        text: tools > 工具相关主页
+        href: tools/index.md
+    - newdoc:
+        text: tools > MkDocs 使用
+        href: /tools/mkdocs.md
