@@ -29,3 +29,27 @@
   border-bottom-left-radius: var(--base-border-radius);
 }
 
+/* 新增日志分类 */
+.changelog-type-newdoc {
+    background-color: #;
+}
+
+.changelog-type-newdoc::before {
+    content: "";
+}
+
+.changelog-type-newdoc {
+    background-color: #;
+}
+
+.changelog-type-newdoc::before {
+    content: "新增文档";
+}
+
+.changelog-type-design {
+    background-color: #;
+}
+
+.changelog-type-design::before {
+    content: "网站设计";
+}
