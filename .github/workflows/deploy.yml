@@ -41,8 +41,8 @@ jobs:
       - name: Commit and push changes
         run: |
           cd target_repo
-          git config --local user.email "jeffery"
-          git config --local user.name "jeffery.xu.chn@gmail.com"
+          git config --local user.name "jeffery"
+          git config --local user.email "jeffery.xu.chn@gmail.com"
           git add .
           SOURCE_COMMIT_MSG="${{ github.event.head_commit.message }}"
           git commit -m "$SOURCE_COMMIT_MSG"
