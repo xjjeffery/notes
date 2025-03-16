@@ -1,0 +1,31 @@
+:root {
+  --base-border-radius: 0.8rem; /* 圆角半径 */
+}
+
+/* 圆角设计 */
+
+/* Grid Cards */
+.md-typeset .grid.cards > ul > li {
+  border-radius: var(--base-border-radius);
+}
+
+/* Markdown Button */
+.md-typeset .md-button {
+  border-radius: var(--base-border-radius);
+}
+
+/* Forms */
+.md-search__form {
+  border-radius: var(--base-border-radius);
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+  border-top-right-radius: var(--base-border-radius);
+  border-top-left-radius: var(--base-border-radius);
+}
+
+[dir="ltr"] .md-search__output {
+  border-bottom-right-radius: var(--base-border-radius);
+  border-bottom-left-radius: var(--base-border-radius);
+}
+
