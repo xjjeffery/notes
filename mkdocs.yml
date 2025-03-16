@@ -84,7 +84,7 @@ plugins:
       separator: '[\s\u200b\-]'
       jieba_dict_user: dict.small.txt
   - meta
-  - blog
+  # - blog
   - tags
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
@@ -171,5 +171,6 @@ extra:
 not_in_nav:
 
 nav:
+  - 主页: index.md
   - 工具相关:
     - tools/mkdocs.md
