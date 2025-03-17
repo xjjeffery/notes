@@ -17,5 +17,6 @@ hide:
     ---
 
     - [x] [MkDocs 使用](./mkdocs.md)
+    - [x] [在 Ubuntu 中安装 Samba](./samba_installation.md)
 
 </div>

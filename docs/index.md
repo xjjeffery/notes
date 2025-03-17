@@ -71,7 +71,6 @@ mkdocs build
 mindmap
   root(笔记框架)
     {{Git}}
-    {{工具相关}}
     {{C++}}
       )C/C++ 基础语法(
       )C++ 新特性(

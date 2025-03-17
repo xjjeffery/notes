@@ -182,5 +182,6 @@ nav:
   - 工具相关:
     - tools/index.md
     - tools/mkdocs.md
+    - tools/samba_installation.md
   - 更新日志: changelog.md
   - 标签: tag.md
