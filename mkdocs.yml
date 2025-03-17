@@ -114,6 +114,8 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
+      toc_depth: 3
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
   # Python Markdown
   - abbr
   - admonition
@@ -181,6 +183,7 @@ nav:
   - 主页: index.md
   - 工具相关:
     - tools/index.md
+    - tools/git_usage.md
     - tools/mkdocs.md
     - tools/samba_installation.md
   - 更新日志: changelog.md
