@@ -216,6 +216,14 @@ Please see the [project license](about.md#license) for further details.
 
     ID 是根据标题的文本创建的，所有文本都转换为小写，任何不允许的字符（包括空格）都转换为破折号。然后，连续的破折号将缩减为单个破折号。
 
+    如果使用的是中文标题，所产生的 ID 可能是一个如 `_1` 的值，要想生成中文的 ID，可以在 `mkdocs.yml` 文件中添加以下的内容:
+
+    ```yaml
+    markdown_extensions:
+    - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+    ```
+
 toc 扩展提供了一些配置设置，您可以在 `mkdocs.yml` 配置文件中设置这些配置设置来改变默认行为：
 
 ```yaml
@@ -224,6 +232,7 @@ markdown_extensions:
       permalink: "#" # 设置标题后的链接文本
       baselevel: 2   # 设置标头的基本级别，默认为 1
       separator: "_" # 单词分隔符，替换生成的 ID 中的空格的字符
+      toc_depth: 3   # 子目录的胜读
 ```
 
 ### Metadata
