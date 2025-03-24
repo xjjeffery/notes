@@ -1,4 +1,8 @@
 - "2025":
+  - "2025.3.23":
+    - newdoc:
+        text: tools > Git 用法
+        href: ./tools/git_usage.html
   - "2025.3.16":
     - design: 创建博客项目
     - design: 简单配置和美化

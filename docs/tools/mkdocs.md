@@ -232,7 +232,7 @@ markdown_extensions:
       permalink: "#" # 设置标题后的链接文本
       baselevel: 2   # 设置标头的基本级别，默认为 1
       separator: "_" # 单词分隔符，替换生成的 ID 中的空格的字符
-      toc_depth: 3   # 子目录的胜读
+      toc_depth: 3   # 子目录的深度
 ```
 
 ### Metadata

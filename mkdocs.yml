@@ -95,7 +95,8 @@ plugins:
       enable_creation_date: true
       exclude:
         - index.md
-        - tools/index.md
+        - tag.md
+        - changelog.md
       enabled: true
   - git-committers:
       enabled: !ENV [CI, false]
