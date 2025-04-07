@@ -41,7 +41,7 @@ conda create -n mkdocs-env python=3.12
 环境创建好以后，安装构建博客需要的插件和依赖，通过此项目中的 `requirements.txt` 将所有的插件和依赖自动化安装。
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 可以通过命令 `mkdocs serve` 启动 MkDocs 内置的服务器，可以在浏览器输入 `localhost:8000` 中预览文档。也可以通关命令 `mkodcs build` 编译整个项目，完成博客的构建，在本地生成一个目录保存所有静态文档，直接打开项目中生成的 `site` 目录中的 HTML 文件进行预览。

@@ -1,0 +1,11 @@
+# mkdocs plugins
+mkdocs
+mkdocs-material
+mkdocs-glightbox
+mkdocs-git-revision-date-localized-plugin
+mkdocs-git-committers-plugin-2
+mkdocs-statistics-plugin
+mkdocs-changelog-plugin
+
+# search for Chinese
+jieba
