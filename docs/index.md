@@ -6,7 +6,7 @@ icon: material/home
 ---
 
 <h1 class="title-container">
-    <span class="title-text typewriter">Welcome to jeffery's note!</span>
+    <span class="title-text typewriter">Welcome to my note!</span>
 </h1>
 <style>
     .title-container {
@@ -42,5 +42,5 @@ mindmap
 
 <br/>
 <span style="display: block; text-align: center; font-size: 18px;">
-    [:material-clock-time-two-outline: 最近更新](changelog.html)
+    [:material-update: 最近更新](changelog.html)
 </span>

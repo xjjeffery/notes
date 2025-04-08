@@ -7,8 +7,6 @@
   --md-footer-bg-color--dark: #efefef;
   --md-footer-fg-color--light: #000000;
   --md-footer-fg-color--lighter: #000000;
-  --md-code-bg-color: #fafafa;
-  --md-code-fg-color: var(--md-typeset-color);
 }
 
 [data-md-color-scheme="slate"] {
@@ -27,7 +25,6 @@
   --md-footer-bg-color--dark: #0d0d0d;
   --md-footer-fg-color--light: #fff;
   --md-footer-fg-color--lighter: #fff;
-  --md-code-bg-color: #1d1d1d;
 }
 
 @media screen and (max-width: 59.9375em) {
