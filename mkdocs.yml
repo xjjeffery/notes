@@ -31,7 +31,7 @@ theme:
         icon: material/weather-night
         name: 切换浅色模式
   font:
-    text: JetBrains Mono # Noto Sans SC # LXGW WenKai Mono TC 
+    text: JetBrains Mono # Noto Sans SC
     code: Martian Mono # JetBrains Mono
   language: zh
   favicon: assets/images/favicon.png
