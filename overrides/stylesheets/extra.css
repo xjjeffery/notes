@@ -7,6 +7,7 @@
   --md-footer-bg-color--dark: #efefef;
   --md-footer-fg-color--light: #000000;
   --md-footer-fg-color--lighter: #000000;
+  --timeline-bg-color: #fffff0;
 }
 
 [data-md-color-scheme="slate"] {
@@ -25,6 +26,7 @@
   --md-footer-bg-color--dark: #0d0d0d;
   --md-footer-fg-color--light: #fff;
   --md-footer-fg-color--lighter: #fff;
+  --timeline-bg-color: #000000;
 }
 
 @media screen and (max-width: 59.9375em) {
@@ -180,12 +182,12 @@ input.md-search__input {
 
 /* 日志块 */
 .timeline-card {
-  background-color: #FFFFF0;
+  background-color: var(--timeline-bg-color);
   border-radius: var(--base-border-radius);
 }
 
 .timeline-content:before {
-  background-color: #FFFFF0;
+  background-color: var(--timeline-bg-color);
 }
 
 /* 新增日志分类 */
