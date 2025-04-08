@@ -1,0 +1,224 @@
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #efefef;
+  --md-primary-bg-color: #000000;
+  --md-typeset-a-color: #000000;
+  --md-footer-fg-color: #000000;
+  --md-footer-bg-color: #efefef;
+  --md-footer-bg-color--dark: #efefef;
+  --md-footer-fg-color--light: #000000;
+  --md-footer-fg-color--lighter: #000000;
+  --md-code-bg-color: #fafafa;
+  --md-code-fg-color: var(--md-typeset-color);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #161616;
+  --md-default-bg-color--light: #161616;
+  --md-default-bg-color--lighter: #161616;
+  --md-default-bg-color--lightest: #161616;
+  --md-default-fg-color: rgba(255,255,255,0.9);
+  --md-default-fg-color--light: rgba(255,255,255,0.85);
+  --md-default-fg-color--lighter: rgba(255,255,255,0.8);
+  --md-default-fg-color--lightest: rgba(255,255,255,0.6);
+  --md-primary-fg-color: #0d0d0d;
+  --md-typeset-a-color: #ffffff;
+  --md-footer-fg-color: #fff;
+  --md-footer-bg-color: #0d0d0d;
+  --md-footer-bg-color--dark: #0d0d0d;
+  --md-footer-fg-color--light: #fff;
+  --md-footer-fg-color--lighter: #fff;
+  --md-code-bg-color: #1d1d1d;
+}
+
+/* Font size */
+.md-typeset {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.md-typeset pre {
+  font-size: 0.95em;
+}
+
+/* Markdown Header */
+/* https://github.com/squidfunk/mkdocs-material/blob/dcab57dd1cced4b77875c1aa1b53467c62709d31/src/assets/stylesheets/main/_typeset.scss */
+.md-typeset h1 {
+  font-weight: 400;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1::before {
+  /*content:"👀 " ;*/
+}
+
+.md-typeset h2 {
+  font-weight: 400;
+}
+
+.md-typeset h2::before {
+  content:"🔰 " ;
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+}
+
+.md-typeset h3::before {
+  /*content:"📌 " ;*/
+}
+
+.md-typeset h5 {
+  text-transform: none;
+}
+
+/* .md-typeset a:hover { */
+/*   color: var(--md-typeset-a-color); */
+/*   text-decoration: underline; */
+/* } */
+
+.md-typeset code {
+  border-radius: 0.2rem;
+}
+
+.highlight span.filename {
+  font-weight: normal;
+}
+
+/* max height of code block */
+/* https://github.com/squidfunk/mkdocs-material/issues/3444 */
+.md-typeset pre > code {
+  max-height: 25rem;
+}
+
+/* 确保页面占满视口 */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 主内容区域占满高度 */
+.md-main__inner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 主页标题样式设置 */
+.title-container {
+    text-align: center;
+}
+
+.title-text {
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* 动画显式主标题: 打字机效果和淡入显式 */
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(25, end) forwards, fadeIn 5s ease-in-out forwards;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* mermaid 的样式设置 */
+.mermaid {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+  --base-border-radius: 0.8rem; /* 圆角半径 */
+}
+
+/* 隐藏 navigation 和 toc 保持正文大小不变 */
+.md-content {
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+/* 圆角设计 */
+
+/* Grid Cards */
+.md-typeset .grid.cards > ul > li {
+  border-radius: var(--base-border-radius);
+}
+
+/* Markdown Button */
+.md-typeset .md-button {
+  border-radius: var(--base-border-radius);
+}
+
+/* Forms */
+.md-search__form {
+  border-radius: var(--base-border-radius);
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+  border-top-right-radius: var(--base-border-radius);
+  border-top-left-radius: var(--base-border-radius);
+}
+
+[dir="ltr"] .md-search__output {
+  border-bottom-right-radius: var(--base-border-radius);
+  border-bottom-left-radius: var(--base-border-radius);
+}
+
+/* 日志块 */
+.timeline-card {
+  background-color: #FFFFF0;
+  border-radius: var(--base-border-radius);
+}
+
+.timeline-content:before {
+  background-color: #FFFFF0;
+}
+
+/* 新增日志分类 */
+.changelog-type-design {
+    background-color: #fae36c;
+}
+
+.changelog-type-design::before {
+    content: "网页设计";
+}
+
+.changelog-type-newdoc {
+    background-color: #fac9e8;
+}
+
+.changelog-type-newdoc::before {
+    content: "新增笔记";
+}
+
+.changelog-type-newcode {
+    background-color: #fac9a0;
+}
+
+.changelog-type-newcode::before {
+    content: "新增源码";
+}
+
+.changelog-type-refactor {
+    background-color: #ed9fa0;
+}
+
+.changelog-type-refactor::before {
+    content: "文档重构";
+}
+
+

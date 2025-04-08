@@ -1,0 +1,202 @@
+# Infomation
+site_name: Jeffery's NoteBook
+site_author: jeffery
+site_dir: site
+site_url: ""
+site_description: 一个比较粗糙的笔记本，什么都写一点
+use_directory_urls: false
+
+# Repository
+repo_name: notes
+repo_url: https://github.com/xjjeffery/notes
+
+# Copyright
+copyright: Copyright &copy; 2025 JunXu</br>The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name:  切换深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换浅色模式
+  font:
+    text: JetBrains Mono # Noto Sans SC # LXGW WenKai Mono TC 
+    code: Martian Mono # JetBrains Mono
+  language: zh
+  favicon: assets/images/favicon.png
+  icon:
+    logo: material/notebook-outline
+    repo: fontawesome/brands/github
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    # - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - announce.dismiss
+    - header.autohide
+    # - navigation.footer
+    # - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - content.footnote.tooltips
+  custom_dir: overrides
+
+plugins:
+  - offline
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: none
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: false
+      auto_caption: false
+      caption_position: bottom
+  - search:
+      separator: '[\s\u200b\-]'
+      jieba_dict_user: dict.small.txt
+  - meta
+  # - blog
+  - tags
+  - git-revision-date-localized:
+      enabled: !ENV [CI, true]
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+        - index.md
+        - tags/index.md
+      enabled: true
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: xjjeffery/notes
+      branch: dev
+      exclude:
+        - index.md
+        - tags/index.md
+  - statistics:
+      ignore_languages:
+        - mermaid
+      page_check_metadata: counter
+      words_per_minute: 300
+      codelines_per_minute: 80
+  - changelog
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+  - footnotes
+  - tables
+  - md_in_html
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      auto_title: true
+      linenums_style: pymdownx-inline
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+          kwds:
+              case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  generator: false
+  social:
+    # - icon: fontawesome/solid/home
+    #   link: https://xjjeffery.github.io/
+    #   name: 主页
+    - icon: fontawesome/brands/github
+      link: https://github.com/xjjeffery
+    - icon: fontawesome/regular/envelope
+      link: jeffery.xu.chn@gmail.com
+      name: 联系我
+    # - icon: fontawesome/brands/weixin
+    #   link: 
+    #   name: wechat
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/toc.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.tonycrane.cc/utils/katex.min.js
+  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+
+  # katex
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
+
+  # mathjax
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml-full.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-svg-full.js
+
+nav:
+  - Home: index.md
